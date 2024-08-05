@@ -33,7 +33,10 @@ As a dedicated Student Tutor within the University of Puerto Rico-Mayaguez, I pl
 
 **University of Puerto Rico-Mayaguez**  
 *Bachelor's degree in Economics, Economics*  
-*2019 - Current*
+*2019 - 2024*
+**University of Puerto Rico-Mayaguez**  
+*Master's degree in Statistical Mathematics*  
+*2024 - Current*
 
 ## Licenses & Certifications
 
