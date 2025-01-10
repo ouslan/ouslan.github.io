@@ -12,7 +12,7 @@ title                    : "Alejandro's Site"
 title_separator          : "-"
 name                     : &name "Alejandro Ouslan"
 description              : &description "Asparing economits, specualzing in softeware development"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://ouslan.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ouslan/ouslan.github.io"
 
