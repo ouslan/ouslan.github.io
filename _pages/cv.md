@@ -11,29 +11,42 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+
+* M.S. in Statistics Mathematics, University of Puerto Rico, Mayaguez, 2026  (expected)
+* B.A. in Economics, University of Puerto Rico, Mayaguez (2024)
+  * Studied in the University of Salamanca, Spain (2023)
+  * AEA Summer Program in Howard University (summer 2024)
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+
+* Spring 2020: Economic Student Association Treasure
+  * University of Puerto Puerto, Mayaguez
+  * Duties includes: Manage the association's finance for fund raising and managing the expenses for events
 
 * Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  * USDA
+  * Duties included:
+  * Supervisor: Professor Julio Hernandez
 
-* Summer 2015: Research Assistant
-  * Github University
+* Fall 2015: Student Financial Advisor
+  * University of Puerto Rico, Mayaguez
+  * Duties included:
+  * Supervisor: Dra. Yolanda Ruiz
+
+* Summer 2024: Experimental Learning Partner
+  * Census Bureau
+  * Duties included:
+  * Supervisor: Dra. Yolanda Ruiz
+
+* Summer 2015: Project Lead Developer
+  * University of Puerto Rico
   * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Supervisor: Dr. Julio Hernandez
   
 Skills
 ======
+
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
@@ -43,22 +56,26 @@ Skills
 
 Publications
 ======
+
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 Talks
 ======
+
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+Projects
 ======
+
   <ul>{% for post in site.projects reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Certifications
 ======
+
 * Currently signed in to 43 different slack teams
