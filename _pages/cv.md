@@ -14,7 +14,7 @@ Education
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012
-
+<iframe src="https://fsdc.econlabs.net/graph/myplate" width="100%" height="600" frameborder="0"></iframe>
 Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
