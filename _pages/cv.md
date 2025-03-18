@@ -11,42 +11,29 @@ redirect_from:
 
 Education
 ======
-
-* M.S. in Statistics Mathematics, University of Puerto Rico, Mayaguez, 2026  (expected)
-* B.A. in Economics, University of Puerto Rico, Mayaguez (2024)
-  * Studied in the University of Salamanca, Spain (2023)
-  * AEA Summer Program in Howard University (summer 2024)
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in Jekyll, GitHub University, 2014
+* B.S. in GitHub, GitHub University, 2012
 
 Work experience
 ======
-
-* Spring 2020: Economic Student Association Treasure
-  * University of Puerto Puerto, Mayaguez
-  * Duties includes: Manage the association's finance for fund raising and managing the expenses for events
+* Spring 2024: Academic Pages Collaborator
+  * GitHub University
+  * Duties includes: Updates and improvements to template
+  * Supervisor: The Users
 
 * Fall 2015: Research Assistant
-  * USDA
-  * Duties included:
-  * Supervisor: Professor Julio Hernandez
+  * GitHub University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
 
-* Fall 2015: Student Financial Advisor
-  * University of Puerto Rico, Mayaguez
-  * Duties included:
-  * Supervisor: Dra. Yolanda Ruiz
-
-* Summer 2024: Experimental Learning Partner
-  * Census Bureau
-  * Duties included:
-  * Supervisor: Dra. Yolanda Ruiz
-
-* Summer 2015: Project Lead Developer
-  * University of Puerto Rico
+* Summer 2015: Research Assistant
+  * GitHub University
   * Duties included: Tagging issues
-  * Supervisor: Dr. Julio Hernandez
+  * Supervisor: Professor Git
   
 Skills
 ======
-
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
@@ -56,26 +43,22 @@ Skills
 
 Publications
 ======
-
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 Talks
 ======
-
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Projects
+Teaching
 ======
-
-  <ul>{% for post in site.projects reversed %}
+  <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Certifications
+Service and leadership
 ======
-
 * Currently signed in to 43 different slack teams
