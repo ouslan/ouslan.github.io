@@ -27,13 +27,13 @@ redirect_from:
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll. 
+* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll.
   * Green check: successful build
   * Orange circle: building
   * Red X: error
   * No icon: not built
 
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
+* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences.
   * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
   * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
 
@@ -42,9 +42,9 @@ redirect_from:
 
 * Your CV can be written using either Markdown ([preview](https://academicpages.github.io/cv/)) or generated via JSON ([preview](https://academicpages.github.io/cv-json/)) and the layouts are slightly different. You can update the path to the one being used in `_data/navigation.yml` with the JSON formatted CV being hidden by default.
 
- * The [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/) is a useful guide for those that want to add functionality to the template or to become contributors to the [template on GitHub](https://github.com/academicpages/academicpages.github.io).
+* The [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/) is a useful guide for those that want to add functionality to the template or to become contributors to the [template on GitHub](https://github.com/academicpages/academicpages.github.io).
 
-## MathJax 
+## MathJax
 
 Support for MathJax (version 3.* via [jsDelivr](https://www.jsdelivr.com/), [documentation](https://docs.mathjax.org/en/latest/)) is included in the template:
 
@@ -62,6 +62,7 @@ The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed 
 **Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772). In some cases, such as when you are including MathJax in a `citation` field for publications, it may be necessary to use `\(...\)` for inline delineation.
 
 ## Mermaid diagrams
+
 Academic Pages includes support for [Mermaid diagrams](https://mermaid.js.org/) (version 11.* via [jsDelivr](https://www.jsdelivr.com/)) and in addition to their [tutorials](https://mermaid.js.org/ecosystem/tutorials.html) and [GitHub documentation](https://github.com/mermaid-js/mermaid) the basic syntax is as follows:
 
 ```markdown
@@ -120,6 +121,7 @@ In order to render a Plotly plot via Markdown the relevant plot data need to be 
 {: .notice}
 
 Which produces the following:
+
 ```plotly
 {
   "data": [
@@ -200,23 +202,10 @@ Essentially what is taking place is that the [Plotly attributes](https://plotly.
 }
 ```
 
-```plotly
-{
-  "data": [{
-		"z": [[10, 10.625, 12.5, 15.625, 20],
-          [5.625, 6.25, 8.125, 11.25, 15.625],
-          [2.5, 3.125, 5.0, 8.125, 12.5],
-          [0.625, 1.25, 3.125, 6.25, 10.625],
-          [0, 0.625, 2.5, 5.625, 10]],
-		"type": "contour"
-	}],
-  "layout": {
-    "title": {
-      "text": "Basic Contour Plot"
-    }
-  }
-}
-```
+<iframe src="https://fsdc-dev.econlabs.net/graph/myplate"
+  width="600" height="400"
+  style="border: none;">
+</iframe>
 
 ## Markdown guide
 
@@ -267,7 +256,7 @@ Definition List Title
 Startup
 :   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
 
-#dowork
+# dowork
 :   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
 
 Do It Live
@@ -275,23 +264,23 @@ Do It Live
 
 ## Unordered Lists (Nested)
 
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
+* List item one
+  * List item one
+    * List item one
+    * List item two
+    * List item three
+    * List item four
   * List item two
   * List item three
   * List item four
+* List item two
+* List item three
+* List item four
 
 ## Ordered List (Nested)
 
-  1. List item one 
-      1. List item one 
+  1. List item one
+      1. List item one
           1. List item one
           2. List item two
           3. List item three
@@ -398,10 +387,9 @@ Or, you can leave a section open by default by including the `open` attribute in
   This section is open by default thanks to open in the &lt;details open&gt; tag!
 </details>
 
-
 ### Emphasize Tag
 
-The emphasize tag should _italicize_ text.
+The emphasize tag should *italicize* text.
 
 ### Insert Tag
 
@@ -453,4 +441,3 @@ This allows you to denote <var>variables</var>.
 **Footnotes**
 
 The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
