@@ -2,7 +2,7 @@
 title: "Querying the QCEW with parallel downloads and DuckDB"
 date: 2025-10-01
 permalink: /posts/2025/10/qcew-parallel-duckdb/
-excerpt: "The Quarterly Census of Employment and Wages (QCEW) is one of the richest public sources on U.S."
+excerpt: "How I download the full QCEW in parallel and query it with DuckDB and SQL."
 tags:
   - data engineering
   - python
