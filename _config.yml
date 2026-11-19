@@ -23,7 +23,7 @@ repository               : "ouslan/ouslan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "cv/profile.svg"
+  avatar           : "ouslan.jpg"
   name             : "Alejandro M. Ouslan"
   pronouns         : # example: "she/her"  
   bio              : "M.S. student in Statistical Mathematics at UPR Mayagüez. Economics, Bayesian inference, and data engineering."
@@ -90,6 +90,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  reports:
+    title: 'Reports and Book Chapters'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
