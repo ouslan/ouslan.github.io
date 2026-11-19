@@ -24,3 +24,14 @@ package-lock.json
 
 # Ignore the main.min.js since it should be built as part of jekyll-build.yml
 assets/js/main.min.js
+
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
