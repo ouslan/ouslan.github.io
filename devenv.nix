@@ -39,8 +39,8 @@ in
     npm.enable = true;
   };
 
-  # Keep gems inside the project instead of the global Ruby directory.
-  env.BUNDLE_PATH = "${config.devenv.state}/bundle";
+  # Gems are installed into .devenv/state/.bundle (BUNDLE_PATH is set by
+  # languages.ruby), so nothing goes into the global Ruby directory.
 
   # https://devenv.sh/scripts/
   scripts.site-setup.exec = setup;
