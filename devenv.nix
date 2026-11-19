@@ -6,47 +6,82 @@
   ...
 }:
 
+let
+  setup = ''
+    set -e
+    bundle install
+    npm install --no-audit --no-fund
+    npm run build:js
+  '';
+in
 {
-  # https://devenv.sh/basics/
-  env.GREET = "devenv";
-
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
+  # Native libraries needed to compile Jekyll's gem dependencies.
+  packages = [
+    pkgs.git
+    pkgs.gnumake
+    pkgs.gcc
+    pkgs.pkg-config
+    pkgs.libffi
+    pkgs.zlib
+    pkgs.libyaml
+  ];
 
   # https://devenv.sh/languages/
-  # languages.rust.enable = true;
+  languages.ruby = {
+    enable = true;
+    bundler.enable = true;
+  };
 
-  # https://devenv.sh/processes/
-  # processes.dev.exec = "${lib.getExe pkgs.watchexec} -n -- ls -la";
+  # Node is only used to build assets/js/main.min.js (see package.json).
+  languages.javascript = {
+    enable = true;
+    npm.enable = true;
+  };
 
-  # https://devenv.sh/services/
-  # services.postgres.enable = true;
+  # Keep gems inside the project instead of the global Ruby directory.
+  env.BUNDLE_PATH = "${config.devenv.state}/bundle";
 
   # https://devenv.sh/scripts/
-  scripts.hello.exec = ''
-    echo hello from $GREET
+  scripts.site-setup.exec = setup;
+
+  # Serve the site at http://localhost:4000 with live reload.
+  # _config_docker.yml blanks `url` so links point at localhost.
+  scripts.site-serve.exec = ''
+    set -e
+    [ -f assets/js/main.min.js ] || site-setup
+    bundle exec jekyll serve \
+      --config _config.yml,_config_docker.yml \
+      --host 127.0.0.1 --port 4000 \
+      --livereload --force_polling "$@"
   '';
 
-  # https://devenv.sh/basics/
-  enterShell = ''
-    hello         # Run scripts directly
-    git --version # Use packages
+  scripts.site-build.exec = ''
+    set -e
+    bundle exec jekyll build --config _config.yml,_config_docker.yml "$@"
   '';
+
+  # https://devenv.sh/processes/  (start with `devenv up`)
+  processes.jekyll.exec = "site-serve";
 
   # https://devenv.sh/tasks/
-  # tasks = {
-  #   "myproj:setup".exec = "mytool build";
-  #   "devenv:enterShell".after = [ "myproj:setup" ];
-  # };
+  # Install gems and build JS automatically the first time you enter the shell.
+  tasks."site:setup" = {
+    exec = setup;
+    status = "test -f assets/js/main.min.js && bundle check >/dev/null 2>&1";
+    before = [ "devenv:enterShell" ];
+  };
+
+  enterShell = ''
+    echo "Academic Pages dev shell"
+    echo "  site-serve   serve at http://localhost:4000 (live reload)"
+    echo "  site-build   build into _site/"
+    echo "  devenv up    run the server as a devenv process"
+  '';
 
   # https://devenv.sh/tests/
   enterTest = ''
-    echo "Running tests"
-    git --version | grep --color=auto "${pkgs.git.version}"
+    site-build
+    test -f _site/index.html
   '';
-
-  # https://devenv.sh/git-hooks/
-  # git-hooks.hooks.shellcheck.enable = true;
-
-  # See full reference at https://devenv.sh/reference/options/
 }
