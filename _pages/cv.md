@@ -373,8 +373,30 @@ Extracurricular Activities
   </div>
 </div>
 
+<div class="cv-entry">
+  <img class="cv-entry__img" src="{{ base_path }}/images/cv/band-association.svg" alt="Secretary (placeholder image)">
+  <div class="cv-entry__body">
+    <h3>Secretary</h3>
+    <p class="cv-entry__meta">Band Student Association, UPRM Marching Band &middot; Mayagüez, PR</p>
+    <ul>
+      <li>Serve as secretary of the band’s student association.</li>
+    </ul>
+  </div>
+</div>
+
 Hobbies
 ======
+<div class="cv-entry">
+  <img class="cv-entry__img" src="{{ base_path }}/images/cv/marching-band.svg" alt="UPRM Marching Band (placeholder image)">
+  <div class="cv-entry__body">
+    <h3>UPRM Marching Band</h3>
+    <p class="cv-entry__meta"><strong>Tuba Section Leader</strong> &middot; University of Puerto Rico, Mayagüez</p>
+    <ul>
+      <li>Play tuba in the University of Puerto Rico at Mayagüez Marching Band.</li>
+      <li>Lead the tuba section as section leader.</li>
+    </ul>
+  </div>
+</div>
 <div class="cv-entry">
   <img class="cv-entry__img" src="{{ base_path }}/images/cv/drone.svg" alt="FPV Drone Flying and Development">
   <div class="cv-entry__body">

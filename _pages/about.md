@@ -34,4 +34,8 @@ Tools
 ======
 Python, R, Rust, Stata, SQL, PyMC, DuckDB, Docker, Nix, GitHub Actions, LaTeX, and GIS.
 
+Outside of work
+======
+I play tuba in the UPRM Marching Band, where I'm the tuba section leader and secretary of the band's student association. I also build and fly FPV drones and do photography. See [Hobbies](/hobbies/) and the [Blog](/year-archive/).
+
 Find my [CV here](/cv/), or download the [PDF résumé](/files/resume.pdf).
