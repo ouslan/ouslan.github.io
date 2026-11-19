@@ -1,0 +1,37 @@
+/* ==========================================================================
+   CV page entries with images
+   ========================================================================== */
+
+.cv-entry {
+  display: flex;
+  gap: 1.25em;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+
+  &__img {
+    flex: 0 0 160px;
+    width: 160px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    h3 { margin-top: 0; margin-bottom: 0.15em; }
+    ul { margin-top: 0.4em; }
+  }
+
+  &__meta {
+    margin: 0;
+    font-size: 0.85em;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 600px) {
+  .cv-entry { flex-direction: column; }
+  .cv-entry__img { width: 100%; max-width: 320px; flex-basis: auto; }
+}

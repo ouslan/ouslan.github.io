@@ -1,22 +1,37 @@
 var addressPoints = [
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "The Kaitz Index and Employment in Puerto Rico<br />Symposium on Applied Economics 2025, UPRM; Mayag\u00fcez, Puerto Rico",
+    18.2116355,
+    -67.0953572
   ],
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
+    "Food Deserts and Chronic Disease<br />CoIDINE 2025; Mayag\u00fcez, Puerto Rico",
+    18.2116355,
+    -67.0953572
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "The Kaitz Index and Employment in Puerto Rico<br />Midwest Economics Association; Chicago, IL, USA",
+    41.8755616,
+    -87.6244212
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536923,
-    -118.2427676
+    "An Alternative Model to Control for Spatial Variability<br />Inter-university Research Seminar in Mathematical Sciences (SIDIM 2026); Mayag\u00fcez, Puerto Rico",
+    18.2116355,
+    -67.0953572
+  ],
+  [
+    "Census API Research Tools<br />Puerto Rico in Data: Annual Collaborative Symposium; Mayag\u00fcez, Puerto Rico",
+    18.2116355,
+    -67.0953572
+  ],
+  [
+    "Food Deserts and Chronic Disease Mortality<br />Symposium on Applied Economics 2024, UPRM; Mayag\u00fcez, Puerto Rico",
+    18.2116355,
+    -67.0953572
+  ],
+  [
+    "The Kaitz Index and Employment in Puerto Rico<br />Symposium on Applied Economics 2026, UPRM; Mayag\u00fcez, Puerto Rico",
+    18.2116355,
+    -67.0953572
   ]
 ];
